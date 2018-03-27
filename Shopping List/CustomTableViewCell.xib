@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="Bnb-Xu-gCs" customClass="CustomTableViewCell" customModule="Shopping_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bnb-Xu-gCs" id="Tbz-Ts-9IH" customClass="CustomTableViewCell" customModule="Shopping_List" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5A-kc-bUF">
+                        <rect key="frame" x="101" y="11" width="83" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Apple" translatesAutoresizingMaskIntoConstraints="NO" id="8lG-Mn-sMg">
+                        <rect key="frame" x="10" y="9" width="77" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="4vd-bN-Iv9"/>
+                            <constraint firstAttribute="width" constant="77" id="Dy2-rB-MlS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Count: 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqg-gt-6qt">
+                        <rect key="frame" x="101" y="40" width="278" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8lG-Mn-sMg" firstAttribute="top" secondItem="Tbz-Ts-9IH" secondAttribute="top" constant="9" id="2De-RB-dRm"/>
+                    <constraint firstItem="8lG-Mn-sMg" firstAttribute="centerY" secondItem="Tbz-Ts-9IH" secondAttribute="centerY" id="e2o-zZ-FEz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="itemCount" destination="aqg-gt-6qt" id="UVW-aV-aND"/>
+                <outlet property="itemImage" destination="8lG-Mn-sMg" id="du5-x6-uFe"/>
+                <outlet property="itemName" destination="F5A-kc-bUF" id="gl5-yv-tiR"/>
+            </connections>
+            <point key="canvasLocation" x="-14.5" y="-109"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Apple" width="210" height="240"/>
+    </resources>
+</document>
